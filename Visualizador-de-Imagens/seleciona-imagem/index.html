@@ -11,13 +11,15 @@
     <h1>Selecionar Imagem</h1>
     
     <form name="entradaDeImagem">
-    Imagem: <input type="file" name="imagemDoArquivo" id="imagemDoArquivo">
-    <input type="button" value="Enviar" onClick="exibeImagem()">
-    </form>
-  
-  
+    Imagem: <input type="file" id="imagemDoArquivo">
+    <input type="button" value="Enviar" onClick="exibeImagemDoArquivo()"><br><br>
     
-  
+    URL: <input type="text" id="textoDaURL">
+    <input type="button" value="Enviar" onClick="exibeImagemDaURL()">
+    </form>
+	
+	<img src="" id="minhaImagem">
+   
     
   </body>
 
