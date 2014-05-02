@@ -24,3 +24,17 @@ function exibeImagemDaURL(){
   document.getElementById("minhaImagem").src = caminhoDaImagem;
 }
 
+/*função que aumenta o tamanho da imagem do campo "minhaImagem" em uma proporção de 1.5*/
+function aumenta(){
+  var imagem = document.getElementById("minhaImagem");
+  imagem.width = imagem.width*1.5;
+  var altura = imagem.height*1.5;
+}
+
+/*função que diminui o tamanho da imagem do campo "minhaImagem" em uma proporção de 1.5*/
+function diminui(){
+  var imagem = document.getElementById("minhaImagem");
+  imagem.width = imagem.width/1.5;
+  var altura = imagem.height/1.5;
+}
+
