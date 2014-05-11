@@ -1,2 +1,9 @@
-/* Styles go here */
+.estiloAreaExibicao {
+  overflow: hidden;
+  border: inset;
+  border-color: #D3D3D3;
+}
 
+.arrastavel {
+  position: relative;
+}

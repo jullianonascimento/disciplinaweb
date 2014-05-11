@@ -22,8 +22,9 @@
     <input type="button" value="Zoom in" onClick="aumenta()">
     <input type="button" value="Zoom out" onClick="diminui()"><br><br>
 	
-	<img src="" id="minhaImagem">
-   
+	<div id="areaExibicao" class="estiloAreaExibicao">
+    <img src="" id="minhaImagem" class="arrastavel" onMouseDown="iniciaArrasto()" onMouseUp="paraArrasto()">
+    </div>
     
   </body>
 
