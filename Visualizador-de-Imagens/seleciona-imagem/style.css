@@ -7,3 +7,10 @@
 .arrastavel {
   position: relative;
 }
+
+.fundoAzul {
+  font-family: Arial;
+  color: #FFFFFF;
+  background-color: #1BA1E2;
+  padding: 10px;
+}
