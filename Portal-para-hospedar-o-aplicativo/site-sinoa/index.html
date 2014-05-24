@@ -2,7 +2,6 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-
 	<title>SINOA</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
@@ -19,7 +18,8 @@
 	<script src="js/jquery.nav.js"></script>
 	<script src="js/main.js"></script>
 </head>
-<!-- To change color change the class "color-1" to "color-2, color-3 ... color-6" -->
+
+<!-- Cores disponíveis [1,6] -->
 <body class="home color-2">
 	<div id="header">
 		<div class="container">
@@ -31,52 +31,110 @@
 				<div id="top-nav" class="">
 					<ul id="fixed-nav">
 						<li class="current"><a href="#home">Página Inicial</a></li>
-						<li><a href="#services">Sobre</a></li>
-						<li><a href="#aboutus">Download</a></li>
-                        <li><a href="#features">Features</a></li>
+						<li><a href="#sobre">Sobre</a></li>
+						<li><a href="#download">Download</a></li>
+                        <li><a href="#características">Características</a></li>
 						<li><a href="#contact">Contato</a></li>
 					</ul>
 				</div>
 
 			</div>
 		</div>
-	</div><!-- End Header -->
+	</div>
+    <!-- End Header -->
     
 	<!-- Big Full screen Banner -->
 	<div class="hero bg-fixed bg-color" id="home">
-
 		<div class="slogan">
 			<div  class="vcenter container">
-
 				<div class="row">
-
 					<div class="span12">
-						<h1>SINOA </h1>
+					  <h1>SINOA </h1>
                         <h2>Sistema de Notificação Acadêmica </h2>
 					</div>
 				</div>
 			</div>
 		</div>
-
-
 	</div>
 	<!-- End Full screen banner  -->
     
     
 	<!-- Sobre o aplicativo Section -->
 	<!-- class section-alt is to give a different color please edit css/style.css to change the color -->
-	<div class="section section-alt" id="services">
+	<div class="section section-alt" id="sobre">
 		<div class="container">
 			<div class="content">
+            
 				<div class="row" >
 					<div class="title">
-						<h2>Sobre o aplicativo</h2>
+						<h2>Sobre o Aplicativo</h2>
 						<div class="hr hr-small hr-center"><span class="hr-inner"></span></div>
 						<p>O SINOA é um aplicativo para dispositivos mobile no qual facilita o acesso à informações provenientes da UFG. Ele é projetado tanto para estudantes quanto para funcionários da UFG, que precisam ser notificados sobre comunicados da Universidade, avisos de provas, notas e frequências, avisos relativos à biblioteca, como vencimentos de empréstimos, dentre outros.
-</p>
+						</p>
 					</div>
 				</div>
+                
+			</div>
+		</div>
+	</div>
+	<!-- End Sobre o aplicativo Section -->
+    
+	<!-- Download section -->
+	<div class="section" id="download">
+		<div class="container">
+			<div class="content">
 				<div class="row">
+					<div class="span12">
+						<div class="title">
+							<h2>Obter o Aplicativo</h2>
+							<div class="hr hr-small hr-center"><span class="hr-inner"></span></div>
+							<p>Siga os links abaixo para fazer o download e instalar o aplicativo em seu dispositivo.</p>
+
+						</div>
+                        <center>
+                        
+                        <a href="https://itunes.apple.com/">
+                        <img src="images/app-store.png" width="240" height="80" vspace="10" hspace="10">
+                        </a>
+                        
+                        <a href="https://play.google.com/store">
+                        <img src="images/google-play.png" width="240" height="80" vspace="10" hspace="10">
+                        </a>
+                        
+                        <a href="http://www.windowsphone.com/pt-br/store/featured-apps">
+                        <img src="images/windows-store.png" width="240" height="80" vspace="10" hspace="10">
+                        </a>
+                        
+                        </center>
+                        
+						<p class="text-center">
+							Links fictícios para efeito de demonstração do site construído.
+						</p>
+						
+					</div>
+				</div>
+			</div>
+		</div> 
+	</div>
+	<!-- End Download section -->
+    
+	<!-- funcionalidades Section -->
+	<div class="section section-alt" id="características">
+		<div class="container">
+			<div class="content">
+				<div class="row">
+					<div class="span12">
+                    
+						<div class="title">
+							<h2>Características</h2>
+							<div class="hr hr-small hr-center"><span class="hr-inner"></span></div>
+							<p>Veja abaixo os principais recursos e funcionalidades do aplicativo.</p>
+						</div>
+                        
+					</div>
+				</div>
+				
+                <div class="row">
 					<div class="span4 i-block">
 						<i class="icon-mobile-phone"></i>
 						<h3>Block-A</h3>
@@ -93,7 +151,8 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat, justo sed tincidunt iaculis, nisl enim rutrum dolor, in posuere purus risus vel quam</p>
 					</div>
 				</div>
-				<div class="hr hr-invisible"></div>
+                
+                <div class="hr hr-invisible"></div>
 				<div class="row">
 					<div class="span4 i-block">
 						<i class="icon-briefcase"></i>
@@ -111,121 +170,12 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat, justo sed tincidunt iaculis, nisl enim rutrum dolor, in posuere purus risus vel quam</p>
 					</div>
 				</div>
-			</div>
-		</div>
-	</div>
-	<!-- End Sobre o aplicativo Section -->
-    
-	<!-- Download section -->
-	<div class="section" id="aboutus">
-		<div class="container">
-			<div class="content">
-				<div class="row">
-					<div class="span12">
-						<div class="title">
-							<h2>Obter o aplicativo</h2>
-							<div class="hr hr-small hr-center"><span class="hr-inner"></span></div>
-							<p>Siga os links abaixo para instalar o aplicativo em seu dispositivo.</p>
-
-						</div>
-                        <center>
-                        <img src="images/app-store.png" width="240" height="80">
-                        <img src="images/google-play.png" width="240" height="80">
-                        <img src="images/windows-store.png" width="240" height="80">
-                        </center>
-                        
-						<p class="text-center">
-							Links fictícios para efeito de demonstração do site construído.
-						</p>
-						
-					</div>
-				</div>
-			</div>
-		</div> 
-	</div>
-	<!-- End Download section -->
-    
-	<!-- Features Section -->
-	<div class="section section-alt" id="features">
-		<div class="container">
-			<div class="content">
-				<div class="row">
-					<div class="span12">
-						<div class="title">
-							<h2>Features</h2>
-							<div class="hr hr-small hr-center"><span class="hr-inner"></span></div>
-							<p>Heading, Buttons &amp; Font Awesome Icons.</p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="span4">
-						<h1>Heading h1</h1>	
-						<h2>Heading h2</h2>	
-						<h3>Heading h3</h3>	
-						<h4>Heading h4</h4>	
-						<h5>Heading h5</h5>	
-						<h6>Heading h6</h6>	
-					</div>
-					<div class="span8">
-						<table class="table table-bordered table-striped">
-							<thead>
-								<tr>
-									<th>Button</th>
-									<th>class=""</th>
-									<th>Description</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td><button type="button" class="btn">Default</button></td>
-									<td><code>btn</code></td>
-									<td>Standard gray button with gradient</td>
-								</tr>
-								<tr>
-									<td><button type="button" class="btn btn-primary">Primary</button></td>
-									<td><code>btn btn-primary</code></td>
-									<td>Provides extra visual weight and identifies the primary action in a set of buttons</td>
-								</tr>
-								<tr>
-									<td><button type="button" class="btn btn-info">Info</button></td>
-									<td><code>btn btn-info</code></td>
-									<td>Used as an alternative to the default styles</td>
-								</tr>
-								<tr>
-									<td><button type="button" class="btn btn-success">Success</button></td>
-									<td><code>btn btn-success</code></td>
-									<td>Indicates a successful or positive action</td>
-								</tr>
-								<tr>
-									<td><button type="button" class="btn btn-warning">Warning</button></td>
-									<td><code>btn btn-warning</code></td>
-									<td>Indicates caution should be taken with this action</td>
-								</tr>
-								<tr>
-									<td><button type="button" class="btn btn-danger">Danger</button></td>
-									<td><code>btn btn-danger</code></td>
-									<td>Indicates a dangerous or potentially negative action</td>
-								</tr>
-								<tr>
-									<td><button type="button" class="btn btn-inverse">Inverse</button></td>
-									<td><code>btn btn-inverse</code></td>
-									<td>Alternate dark gray button, not tied to a semantic action or use</td>
-								</tr>
-								<tr>
-									<td><button type="button" class="btn btn-link">Link</button></td>
-									<td><code>btn btn-link</code></td>
-									<td>Deemphasize a button by making it look like a link while maintaining button behavior</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-
-				</div>
+                
 			</div>
 		</div>
 	</div> 
-	<!-- End Features -->
+	<!-- End funcionalidades -->
+    
 	<!-- Contact Section -->
 	<div class="section" id="contact" >
 		<div class="container">
@@ -239,9 +189,7 @@
 
 						</div>
 					</div>
-					<div class="span8">
-						
-					</div>
+					
 					<div class="span4">
 						<h4>Our Location</h4>
 						<p>F 4, Vidhi Apartment, Jambulkar Chowk, Near Camelia, Wanowari</p>

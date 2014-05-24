@@ -48,6 +48,8 @@ h1 {
 
 h2 {
 	font-size: 32px;
+	color: inherit;
+	font-family: Montserrat, sans-serif;
 }
 
 h3 {
@@ -123,7 +125,7 @@ body.color-2::selection {background: #3498db; color: #fff; }
 body.color-2 a{
 	color: #3498db;
 	text-decoration: none;
-	border-bottom: 1px solid #3498db;
+	/*border-bottom: 1px solid #3498db;*/
 }
 body.color-2 div#top-nav #fixed-nav li a:hover {
 	color: #3498db;
