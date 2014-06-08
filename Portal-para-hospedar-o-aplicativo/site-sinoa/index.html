@@ -8,9 +8,11 @@
 	<meta name="HandheldFriendly" content="true">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<!-- Import CSS -->
+	
 	<link rel="stylesheet" href="css/main.css">
 	<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    
+    <script src="js/script.js"></script>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery.easing.min.js"></script>
 	<script src="js/jquery.scrollto.min.js"></script>
@@ -32,6 +34,7 @@
 					<ul id="fixed-nav">
 						<li class="current"><a href="#home">Página Inicial</a></li>
 						<li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#galeria">Galeria</a></li>
 						<li><a href="#download">Baixar</a></li>
                         <li><a href="#características">Características</a></li>
 						<li><a href="#contato">Contato</a></li>
@@ -49,12 +52,10 @@
 			<div  class="vcenter container">
 				<div class="row">
 					<div class="span12">
-                    <h1 style="font-size: 32px">Experimente o </h1>
-					<h1>SINOA </h1>
-                    <!-- <img src="images/sinoa-logo.png">-->
-                    <!-- <h2>Sistema de Notificação Acadêmica </h2> -->
-                    <h3> Um meio prático para você receber as notícias da UFG em qualquer lugar</h3>
-                    <!--<img src="images/tela-inicial.png" width="72" height="128">-->
+                        <h1 style="font-size:32px">Experimente o </h1>
+                        <h1> SINOA </h1>
+                        <img  src="images/sinoa_hand250.png">
+                        <h3> Um meio prático para você receber as notícias da UFG em qualquer lugar</h3>
 					</div>
 				</div>
 			</div>
@@ -72,7 +73,7 @@
 					<div class="title">
 						<h2>Sobre o Aplicativo</h2>
 						<div class="hr hr-small hr-center"><span class="hr-inner"></span></div>
-						<p>O Sistema de Notificação Acadêmica SINOA é um aplicativo para dispositivos móveis no qual facilita o acesso à informações provenientes da Universidade Federal de Goiás. Ele é projetado para os alunos da UFG, que precisam receber comunicados, avisos de provas, notas e frequências, avisos relativos à biblioteca, e também se adequa ao público em geral que queira estar por dentro das notícias, informações institucionais e os principais destaques da UFG.
+						<p>O Sistema de Notificação Acadêmica SINOA é um aplicativo para dispositivos móveis no qual facilita o acesso à informações provenientes da Universidade Federal de Goiás. Ele é projetado para os alunos da UFG, que precisam receber avisos de provas, notas e frequências, avisos relativos à biblioteca, e também se adequa ao público em geral que queira estar por dentro das notícias, comunicados, informações institucionais e os principais destaques da UFG.
 						</p>
 					</div>
 				</div>
@@ -81,6 +82,63 @@
 		</div>
 	</div>
 	<!-- End Sobre o aplicativo Section -->
+    
+    <!-- Galeria Section -->
+	<div class="section" id="galeria" >
+		<div class="container">
+			<div class="content">
+				<div class="row">
+					<div class="span12">
+						<div class="title">
+							<h2>Galeria de Imagens</h2>
+							<div class="hr hr-small hr-center"><span class="hr-inner"></span></div>
+							<p>Veja abaixo algumas imagens do SINOA. Dê um clique sobre elas para expandir.</p>
+						</div>
+                        
+                        <center>
+                        <a href = "#" onclick = "abrirCaixa(1)">
+                        <img src="images/mini_sinoa001.png" width="100" height="100" vspace="20" hspace="20">
+                        </a>
+                        <a href = "#" onclick = "abrirCaixa(2)">
+                        <img src="images/mini_sinoa002.png" width="100" height="100" vspace="20" hspace="20">
+                        </a>
+                        <a href = "#" onclick = "abrirCaixa(3)">
+                        <img src="images/mini_sinoa003.png" width="100" height="100" vspace="20" hspace="20">
+                        </a>
+                        <a href = "#" onclick = "abrirCaixa(4)">
+                        <img src="images/mini_sinoa004.png" width="100" height="100" vspace="20" hspace="20">
+                        </a>
+                        <a href = "#" onclick = "abrirCaixa(5)">
+                        <img src="images/mini_sinoa005.png" width="100" height="100" vspace="20" hspace="20">
+                        </a>
+                        <center>
+                
+                        <div id="box" class="box">
+                        <a href = "#galeria" onclick = "fecharCaixa()">
+                        <button type="button" class="btn btn-inverse" style="float:right">Fechar</button>
+                        <br>
+                        </a>
+                        
+                        <hr>
+                        <center>
+                        <img  name="imagemAplicativo" src="" width="70%" height="70%">
+                        </center>
+                        
+                        <hr>
+                        <button type="button" class="btn" onclick="anterior()" style="float:left">Anterior</button>
+                        <button type="button" class="btn" onclick="proxima()"  style="float:right">Próxima</button>
+                                              
+                        </div> 
+                
+                        <div id="escurecer" class="escurecer"></div>
+                        
+                    </div>
+                </div>
+             </div>
+        </div>
+    </div>
+    <!-- End Galeria Section -->                    
+                        
     
 	<!-- Download section -->
 	<div class="section" id="download">
@@ -111,9 +169,8 @@
                         </center>
                         
 						<!--<p class="text-center">
-							Links fictícios para efeito de demonstração do site construído.
+							*Links fictícios para efeito de demonstração do site construído.
 						</p>-->
-						
 					</div>
 				</div>
 			</div>
@@ -198,24 +255,14 @@
 							<p>Dúvidas ou sugestões? Mande-nos um email.</p>
 						</div>
 					</div>
-                   <center>
+                    <center>
 					<div>
                     
 						<h4>E-mail</h4>
-						<p>jullianonascimento@inf.ufg.br</p>
-						<!--<hr class="grey"/>-->
-                        
-                        
-                       <!-- <h4>Our Location</h4>
-						<p>F 4, Vidhi Apartment, Jambulkar Chowk, Near Camelia, Wanowari</p>
-						<hr class="grey"/>
-						<h4>Socialize With Us</h4>
-						<div class="social">
-							<a href="#fb"><i class="icon-facebook-sign"></i></a>
-							<a href="#fb"><i class="icon-twitter-sign"></i></a>
-							<a href="#fb"><i class="icon-google-plus-sign"></i></a>
-						</div>-->
-
+                        <a href="mailto:jullianonascimento@inf.ufg.br?Subject=SINOA%20contato" target="_top">
+                        <p>jullianonascimento@inf.ufg.br</p>
+                        </a>
+						
 					</div>
                     </center>
 				</div>
